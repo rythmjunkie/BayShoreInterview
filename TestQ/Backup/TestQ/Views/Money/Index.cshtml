@@ -1,0 +1,15 @@
+﻿@{
+  
+}
+
+<h2>Money Converter</h2>
+<form method="post" name="form1">
+<input type="number" step="0.01" min="0" name="amount"/>
+<input type="submit" class="button" value="Submit" />
+    </form>
+@if(ViewBag.result != null)
+{
+    <h2>@ViewBag.intResult</h2>
+<h3>Result = @ViewBag.result</h3>
+}
+
